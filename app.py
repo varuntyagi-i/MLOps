@@ -10,8 +10,8 @@ labelencoder = pickle.load(open("modelcreation/rfclabelencoder.pkl", mode="rb"))
 
 
 @app.route("/ping")
-def preintmyname():
-    return("hello varun")
+def printmyname():
+    return {"message": "Hi Varun! Don't worry I'm working !!"}
 
 @app.route("/predict", methods=["POST"])
 def prediction():
